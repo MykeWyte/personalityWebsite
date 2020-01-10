@@ -1,0 +1,16 @@
+@keyframes background-shift{
+  from{background-color: black;}
+  to{background-color: white;}
+}
+
+body{
+  font-size:25px;
+  font-weight:bold;
+  background-color: black;
+  color:#ff702e;
+  animation: background-shift 300s infinite alternate;
+}
+
+div{
+  background-color: gray;
+}
