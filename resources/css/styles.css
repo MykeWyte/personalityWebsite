@@ -3,6 +3,11 @@
   to{background-color: white;}
 }
 
+@keyframes border-shift{
+  from{background-color: white;}
+  to{background-color: black;}
+}
+
 body{
   font-size:25px;
   font-weight:bold;
@@ -11,6 +16,23 @@ body{
   animation: background-shift 300s infinite alternate;
 }
 
-div{
+div.header, div.content{
   background-color: gray;
+  padding:5px 20px 5px 20px;
+  border-style: groove;
+  border-width: 8px;
+  margin:30px;
+  animation: border-shift 300s infinite alternate;
+}
+
+div{
+  padding:5px 20px 5px 20px;
+  margin:30px;
+}
+
+.color-box{
+  width:30%;
+  height:400px;
+  border-style: double;
+  border-width: 10px;
 }
