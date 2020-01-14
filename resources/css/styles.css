@@ -1,11 +1,17 @@
 @keyframes background-shift{
-  from{background-color: black;}
-  to{background-color: white;}
+  0%{background-color: #0000cc;}
+  17%{background-color: #cc00cc;}
+  33%{background-color: #cc0000;}
+  50%{background-color: #cccc00;}
+  67%{background-color: #00cc00;}
+  83%{background-color: #00cccc;}
+  100%{background-color: #0000cc;}
 }
 
+
 @keyframes border-shift{
-  from{background-color: white;}
-  to{background-color: black;}
+  from{border-color: #eeeeee;}
+  to{border-color: black;}
 }
 
 body{
@@ -13,16 +19,11 @@ body{
   font-weight:bold;
   background-color: black;
   color:#ff702e;
-  animation: background-shift 300s infinite alternate;
+  animation: background-shift 300s infinite;
 }
 
 div.header, div.content{
-  background-color: gray;
-  padding:5px 20px 5px 20px;
-  border-style: groove;
-  border-width: 8px;
-  margin:30px;
-  animation: border-shift 300s infinite alternate;
+  background-color: rgba(0,0,0,0.8);
 }
 
 div{
